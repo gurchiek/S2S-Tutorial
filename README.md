@@ -35,4 +35,4 @@ trial_names: Standing, Supine, SeatedLegSwing, Walk, WalkToeIn, WalkToeOut, HipS
 imu_names: IMU1, IMU2, IMU3 (see paper for details)
 
 marker_names: IMU1, IMU2, IMU3, LMAL, FIBHEAD, MMAL, TIBTUB, SHANK1, SHANK2, SHANK3, LEPI, MEPI, THIGH1, THIGH2, THIGH3, THIGH4 (see paper for details)
-                               
+'''
