@@ -1,5 +1,5 @@
 # S2S-Tutorial
-Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in the Journal of Biomechanics - please cite the following: TBD
+Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in the *Journal of Biomechanics* - please cite the following: TBD
 
 Dependencies: Matlab + Signal Processing Toolbox
 
@@ -12,15 +12,14 @@ Dependencies: Matlab + Signal Processing Toolbox
 # Algorithms
 1. estimateAxisFromStaticPosture - Implements algorithm 1 in the paper
 2. estimateAxisFromUniaxialRotation - Implements algorithm 2 in the paper
-1. estimateAxisFromPlanarMotion - Implements algorithm 3 in the paper
-1. s2sShankCalibrationSupineSwingStand - Implements algorithm 4 in the paper
+3. estimateAxisFromPlanarMotion - Implements algorithm 3 in the paper
+4. s2sShankCalibrationSupineSwingStand - Implements algorithm 4 in the paper
 
 # Data
 IMU and Marker data are stored in the Matlab data file 'data.mat'. It is a struct organized as per:
 
+'''text
 data.(trial_name).imu.time = 1xN array of timestamps
-
-
                      .numSamples
                      .samplingFrequency
                      .(imu_name).gyro = 3xN array of gyroscope data (rad/s)
@@ -32,6 +31,8 @@ data.(trial_name).imu.time = 1xN array of timestamps
                       .marker.(marker_name).position = 3xN array of marker position data (m)
 
 trial_names: Standing, Supine, SeatedLegSwing, Walk, WalkToeIn, WalkToeOut, HipStar (see paper for details)
+
 imu_names: IMU1, IMU2, IMU3 (see paper for details)
+
 marker_names: IMU1, IMU2, IMU3, LMAL, FIBHEAD, MMAL, TIBTUB, SHANK1, SHANK2, SHANK3, LEPI, MEPI, THIGH1, THIGH2, THIGH3, THIGH4 (see paper for details)
                                
