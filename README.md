@@ -29,10 +29,10 @@ data.(trial_name).imu.time = 1xN array of timestamps
                       .time = 1xN array of timestamps
                       .samplingFrequency
                       .marker.(marker_name).position = 3xN array of marker position data (m)
+'''
 
 trial_names: Standing, Supine, SeatedLegSwing, Walk, WalkToeIn, WalkToeOut, HipStar (see paper for details)
 
 imu_names: IMU1, IMU2, IMU3 (see paper for details)
 
 marker_names: IMU1, IMU2, IMU3, LMAL, FIBHEAD, MMAL, TIBTUB, SHANK1, SHANK2, SHANK3, LEPI, MEPI, THIGH1, THIGH2, THIGH3, THIGH4 (see paper for details)
-'''
