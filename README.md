@@ -18,23 +18,16 @@ Dependencies: Matlab + Signal Processing Toolbox
 ## Data
 IMU and Marker data are stored in the Matlab data file 'data.mat'. It is a struct organized as per:
 
-````md
-```text
-data.(trial_name)
-  imu
-    time              = 1xN timestamps
-    numSamples
-    samplingFrequency
-    gyro              = 3xN rad/s
-    accel             = 3xN m/s^2
-
-  trc
-    numMarkers
-    numSamples
-    time
-    samplingFrequency
-    marker.(name).position = 3xN positions
-```
+data.(trial_name).imu.time = 1xN array of timestamps
+                     .numSamples
+                     .samplingFrequency
+                     .(imu_name).gyro = 3xN array of gyroscope data (rad/s)
+                                .accel = 3xN array of accelerometer data (m/s/s)
+                  .trc.numMarkers
+                      .numSamples
+                      .time = 1xN array of timestamps
+                      .samplingFrequency
+                      .marker.(marker_name).position = 3xN array of marker position data (m)
 
 trial_names: Standing, Supine, SeatedLegSwing, Walk, WalkToeIn, WalkToeOut, HipStar (see paper for details)
 
