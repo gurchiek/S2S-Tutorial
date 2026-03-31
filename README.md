@@ -19,6 +19,8 @@ Dependencies: Matlab + Signal Processing Toolbox
 IMU and Marker data are stored in the Matlab data file 'data.mat'. It is a struct organized as per:
 
 data.(trial_name).imu.time = 1xN array of timestamps
+
+
                      .numSamples
                      .samplingFrequency
                      .(imu_name).gyro = 3xN array of gyroscope data (rad/s)
