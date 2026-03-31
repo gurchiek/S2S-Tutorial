@@ -1,5 +1,5 @@
 # S2S-Tutorial
-Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in the [TBD] - please cite the following: TBD
+Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in [TBD] - please cite the following: [TBD]
 
 Dependencies: Matlab + Signal Processing Toolbox
 
