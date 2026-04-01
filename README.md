@@ -24,6 +24,7 @@ data.(trial_name).imu.time = 1xN array of timestamps
                      .samplingFrequency
                      .(imu_name).gyro = 3xN array of gyroscope data (rad/s)
                                 .accel = 3xN array of accelerometer data (m/s/s)
+
                   .trc.numMarkers
                       .numSamples
                       .time = 1xN array of timestamps
