@@ -1,7 +1,7 @@
 # S2S-Tutorial
 Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in [TBD] - please cite the following: [TBD]
 
-Dependencies: Matlab and Signal Processing Toolbox
+Dependencies: Matlab, Signal Processing Toolbox, and (optionally) Aerospace Toolbox
 
 ## Examples
 1. Gait Event Detection - Implements data-driven example 1 in the paper and generates Figure 4
