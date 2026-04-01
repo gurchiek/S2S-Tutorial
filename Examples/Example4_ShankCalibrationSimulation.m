@@ -13,7 +13,11 @@ sf = 225;
 % clemson elevation and latitude => local gravity
 elev = 221; % meters
 lat = 34.68; % degrees
-g = gravitywgs84(elev,lat);
+if license('test','Aerospace_Toolbox')
+    g = gravitywgs84(elev,lat);
+else
+    g = 9.8066499999999994; % opensim
+end
 
 % set noise density
 % Axivity AX6 uses Bosch BM160
