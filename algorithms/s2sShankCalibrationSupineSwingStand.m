@@ -41,10 +41,10 @@ function results = s2sShankCalibrationSupineSwingStand(supine,swing,stand)
 % based on clemson elev (221 m) and lat (34.68 deg) = 9.796382780611296
 elev = 221; % meters
 lat = 34.68; % degrees
-if license('test','Aerospace_Toolbox')
-    g = gravitywgs84(elev,lat);
-else
+if isempty(which('gravitywgs84'))
     g = 9.8066499999999994;
+else
+    g = gravitywgs84(elev,lat);
 end
 
 % options for static posture calibration

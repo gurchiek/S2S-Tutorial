@@ -13,10 +13,10 @@ sf = 225;
 % clemson elevation and latitude => local gravity
 elev = 221; % meters
 lat = 34.68; % degrees
-if license('test','Aerospace_Toolbox')
-    g = gravitywgs84(elev,lat);
+if isempty(which('gravitywgs84'))
+    g = 9.8066499999999994;
 else
-    g = 9.8066499999999994; % opensim
+    g = gravitywgs84(elev,lat);
 end
 
 % set noise density
