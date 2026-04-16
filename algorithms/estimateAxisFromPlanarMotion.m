@@ -57,7 +57,7 @@ if isfield(options,'initial_guess')
 end
 
 % estimate mean dot product between u and accel measurements = projection
-% of gravity onto u
+% of gravity onto u + bias
 mu = ybar' * u;
 
 % noise variance estimate

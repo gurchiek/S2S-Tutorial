@@ -37,7 +37,7 @@ end
 % num samples
 N = size(Yw,2);
 
-% calculate scatter matrix
+% calculate sum of outer products
 A = Yw * Yw';
 
 % eigen decomp
