@@ -1,5 +1,5 @@
 # S2S-Tutorial
-Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in [TBD] - please cite the following: [TBD]
+Example code that accompanies the tutorial on estimating sensor-to-segment orientation published in the Journal of Biomechanics - please cite the following: Gurchiek, RD. On the theory and practice of estimating sensor-to-segment orientation: A tutorial. *Journal of Biomechanics* (2026): 113584.
 
 Dependencies: Matlab, Signal Processing Toolbox, and (optionally) Aerospace Toolbox
 
